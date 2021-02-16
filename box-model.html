@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    .box {
+      height: 300px;
+      width: 300px;
+      background-color: #11C5C6;
+    }
+
+    .box p {
+      height: 75%;
+      width: 75%;
+      background-color: #FBDD1C;
+    }
+
+    .content {
+      max-width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      background-color: deeppink;
+    }
+
+    .content p {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .overflowing-content {
+      height: 200px;
+      width: 200px;
+      background-color: lightgreen;
+      overflow: scroll;
+      box-sizing: border-box;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    .display-roles {
+      width: 75%;
+      margin: 0 auto;
+      border: 1px solid gray;
+      background-color: seashell;
+      border-radius: 5px;
+    }
+
+    .display-roles ul {
+      text-align: center;
+    }
+
+    .display-roles ul li  {
+      display: inline;
+      margin: 5px;
+    }
+
+    .display-roles ul li:hover {
+      background-color: lightslategray;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde. Facere commodi voluptates, assumenda expedita vero iure, fugiat cupiditate quisquam magnam unde, tempore natus eaque hic? Deserunt quisquam doloribus itaque.</p>
+  </div>
+
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci eaque non, voluptatum hic quo laborum sequi modi iste velit sunt totam sint consectetur, blanditiis tenetur. Magnam sapiente quo id molestias?</p>
+  </div>
+
+  <div class="overflowing-content">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate aliquid ea repudiandae quidem quas aliquam explicabo veritatis fugiat ad facilis ipsam quia dicta, sint aperiam voluptas expedita animi et accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sit quas rem ipsum cupiditate dolore distinctio nisi earum perspiciatis laborum. Ab expedita unde natus explicabo ratione, perferendis esse quidem officiis.</p>
+  </div>
+
+  <div class="display-roles">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Product</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
