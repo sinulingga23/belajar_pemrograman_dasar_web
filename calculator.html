@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex; /* set .container memiliki display flex*/
+      flex-direction: column;
+
+      width: 800px;
+      height: 300px;
+      padding: 20px;
+      margin: 0 auto; /* membuat element tersebut berada di tengah parent */
+      background-color: deepskyblue;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+
+      padding: 20px;
+      margin: 5px;
+      background-color: gold;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    .box {
+      flex-grow: 1;
+
+      background-color: hotpink;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flex-row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="flex-row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+</html>
